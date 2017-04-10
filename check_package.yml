@@ -1,0 +1,12 @@
+---
+- name:  Check package version playbook
+  hosts: demo
+
+  tasks:
+    - name: Check version of mtr package
+      yum:
+        list=mtr
+      register: mtr_pkg
+
+    - debug:
+        var: mtr_pkg
