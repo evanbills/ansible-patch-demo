@@ -5,7 +5,7 @@
   tasks:
     - name: Check version of docker package
       yum:
-        list=docker
+        list:  docker
       register: docker_pkg
 
     - debug:
