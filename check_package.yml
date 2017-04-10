@@ -5,8 +5,8 @@
   tasks:
     - name: Check version of mtr package
       yum:
-        list=mtr
-      register: mtr_pkg
+        list=docker
+      register: docker_pkg
 
     - debug:
-        var: mtr_pkg
+        var: docker_pkg
