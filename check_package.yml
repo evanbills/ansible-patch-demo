@@ -1,6 +1,9 @@
+# Will display all versions available and installed version
+
 ---
 - name:  Check package version playbook
   hosts: demo
+  become:  true
 
   tasks:
     - name: Check version of docker package

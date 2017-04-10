@@ -3,6 +3,7 @@
 ---
 - name:  Patch package if correct version not installed
   hosts: demo
+  become:  true
 
   tasks:
     - name: Install specific version of docker package
