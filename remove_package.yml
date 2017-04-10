@@ -8,5 +8,5 @@
   tasks:
     - name: Install specific version of docker package
       yum:
-        name:  docker
+        name:  docker, docker-common
         state:  absent
