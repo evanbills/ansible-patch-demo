@@ -1,12 +1,12 @@
 # Will patch docker to a specific version that is not the latest
 
 ---
-- name:  Patch package if correct version not installed
+- name:  Install or patch to latest version
   hosts: demo
   become:  true
 
   tasks:
-    - name: Install specific version of docker package
+    - name: Install or patch to latest version
       yum:
         name:  docker
         state:  latest
