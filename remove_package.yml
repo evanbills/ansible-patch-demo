@@ -1,0 +1,11 @@
+# Remove the docker package
+
+---
+- name:  Patch package if correct version not installed
+  hosts: demo
+
+  tasks:
+    - name: Install specific version of docker package
+      yum:
+        name:  docker
+        state:  absent
