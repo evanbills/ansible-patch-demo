@@ -1,4 +1,4 @@
-# Will patch docker to a specific version that is not the latest
+# Will patch or install the latest docker version
 
 ---
 - name:  Install or patch to latest version
